@@ -9,7 +9,7 @@
 <!-- We can give absolute url, or relative url like /nextpage.jsp, and special POST or GET method -->
 <form action="https://google.co.in">
 <!-- If we remove this, every thing will be moved to left of the page-->
-<p align="center">
+<div align="center">
 <!--Adds a heading to the form-->
 <h1>Employee Interest Survey form</h1>
 Enter your name:
@@ -37,6 +37,17 @@ How do you like to read about your favorite topics?
 <input type="checkbox" name="Magazines">Magazines
 </p>
 What genre of movies do you like?
+<!--Select box lets you choose one of the multiple dropdown options-->
+<select name="moviepref" ><option>
+<option value=1 selected = "true">comedy
+<option value=2 >romance
+<option value=3 >thriller
+<option value=4 >horror
+<select value=5 >biopic
+</select>
+</br></br>
+<!--submits the information entered in the form by the user -->
+<input type=submit value="Submit form">
 </div>
 </form>
 </body>
